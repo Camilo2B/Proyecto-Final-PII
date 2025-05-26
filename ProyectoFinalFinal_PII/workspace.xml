@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0f55324d-7711-48c0-a203-83da8609a88e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/P final p2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/data/billetera_data.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/HelloApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/Administrador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/AuthenticationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/BilleteraService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/BilleteraVirtual.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/Categoria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/CategoriaManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/ConfiguracionBilletera.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/Cuenta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/DataManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/DepositoFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/DepositoStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/Encriptacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/FacadeBilletera.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/ICuenta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/OperacionContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/OperacionStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/Pin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/Presupuesto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/PresupuestoManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/ReporteService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/RetiroFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/RetiroStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/SeguridadDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/SeguridadDosPasos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/TipoCuenta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/TipoTransaccion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/Transaccion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/TransaccionCreator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/TransaccionDeposito.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/TransaccionFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/TransaccionRetiro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/TransaccionTransferencia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/TransferenciaFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/TransferenciaStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/Usuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/ViewController/DashboardController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/ViewController/RegistroViewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/ViewController/RolViewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/ViewController/SceneController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/ViewController/SesionViewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/ViewController/TransaccionesController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/ViewController/UsuarioViewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/ViewController/WelcomeViewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/resources/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Bienvenida.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/resources/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Bienvenido.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/resources/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Dashboard.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/resources/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Registro.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/resources/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Registro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/resources/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Rol.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/resources/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Rol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/resources/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Sesion.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/resources/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Sesion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/resources/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Transacciones.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/resources/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Usuario.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/resources/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/test/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/CuentaTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/test/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/PresupuestoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/test/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/UsuarioTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Bienvenida.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Bienvenido.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Dashboard.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/HelloApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/HelloController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/Administrador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/AuthenticationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/BilleteraService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/BilleteraVirtual.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/Categoria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/CategoriaManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/ConfiguracionBilletera.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/Cuenta.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/DataManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/DepositoFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/DepositoStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/Encriptacion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/FacadeBilletera.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/ICuenta.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/OperacionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/OperacionStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/Persona.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/Pin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/Presupuesto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/PresupuestoManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/ReporteService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/RetiroFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/RetiroStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/SeguridadDecorator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/SeguridadDosPasos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/TipoCuenta.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/TipoTransaccion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/Transaccion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/TransaccionCreator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/TransaccionDeposito.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/TransaccionFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/TransaccionRetiro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/TransaccionTransferencia.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/TransferenciaFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/TransferenciaStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/Usuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Registro.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Registro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Rol.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Rol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Sesion.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Sesion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Transacciones.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Usuario.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/ViewController/DashboardController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/ViewController/RegistroViewController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/ViewController/RolViewController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/ViewController/SceneController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/ViewController/SesionViewController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/ViewController/TransaccionesController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/ViewController/UsuarioViewController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/ViewController/WelcomeViewController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/classes/module-info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/test-classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/CuentaTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/test-classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/PresupuestoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/target/test-classes/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/UsuarioTest.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/P2_PF_Billetera" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;JuanDCT99&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/JuanDCT99/P2_PF_Billetera.git&quot;,
+    &quot;accountId&quot;: &quot;366cc266-7a23-4967-87b4-ae681bab62a5&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2x4HVPPrUFi2XUmY4iOYa6G826d" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ASUS/Documents/ggg/P103D-POO-2024-II-main/P103D-POO-2024-II-main/PII-BilleteraVirtual",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.4229885",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\Documents\ggg\P103D-POO-2024-II-main\P103D-POO-2024-II-main\PII-BilleteraVirtual\P2_PF_Billetera" />
+      <recent name="C:\Users\juand\Desktop\PII-BilleteraVirtual\P2_PF_Billetera\P2_PF_Billetera\P2_PF_BILLETERA\ProyectoFinalPatrones\ProyectoFinal_BilleteraVirtual\src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="co.edu.uniquindio.poo.proyectofinal_billeteravirtual.App" />
+      <module name="PII-BilleteraVirtual" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.edu.uniquindio.poo.proyectofinal_billeteravirtual.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0f55324d-7711-48c0-a203-83da8609a88e" name="Changes" comment="" />
+      <created>1747190448948</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747190448948</updated>
+      <workItem from="1748184155595" duration="201000" />
+      <workItem from="1748188097111" duration="84000" />
+      <workItem from="1748188198158" duration="3265000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
