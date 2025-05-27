@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane prefHeight="764.0" prefWidth="1126.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.proyectofinal_billeteravirtual.ViewController.ReportesController">
+   <children>
+      <BorderPane prefHeight="764.0" prefWidth="1126.0">
+         <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="1126.0" style="-fx-background-color: #4CAF50;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefWidth="250.0" text="Saldo: $$0.00" textFill="WHITE" fx:id="lblSaldo">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" prefWidth="250.0" text="Usuario" textFill="WHITE" fx:id="lblUsuario">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="80.0" prefWidth="626.0" spacing="20.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#irADashboard" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #2196F3; -fx-text-fill: white;" text="Dashboard">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#irATransacciones" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #2196F3; -fx-text-fill: white;" text="Transacciones">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#cerrarSesion" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #F44336; -fx-text-fill: white;" text="Cerrar Sesión">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <VBox alignment="TOP_CENTER" prefHeight="684.0" prefWidth="1126.0" spacing="20.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Generación de Reportes" textFill="#4CAF50">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="150.0" prefWidth="1126.0" spacing="20.0">
+                     <children>
+                        <VBox alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="250.0">
+                           <children>
+                              <Label text="Tipo de reporte:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="cmbTipoReporte" prefHeight="30.0" prefWidth="250.0">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </ComboBox>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="250.0">
+                           <children>
+                              <Label text="Fecha de inicio:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <DatePicker fx:id="dpFechaInicio" prefHeight="30.0" prefWidth="250.0">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </DatePicker>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="250.0">
+                           <children>
+                              <Label text="Fecha de fin:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <DatePicker fx:id="dpFechaFin" prefHeight="30.0" prefWidth="250.0">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </DatePicker>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="150.0" prefWidth="250.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#generarReporte" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="Generar Reporte">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#exportarReporte" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #2196F3; -fx-text-fill: white;" text="Exportar Reporte">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <TextArea fx:id="txtReporte" prefHeight="400.0" prefWidth="1086.0" promptText="El reporte se mostrará aquí...">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Courier New" size="12.0" />
+                     </font>
+                  </TextArea>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

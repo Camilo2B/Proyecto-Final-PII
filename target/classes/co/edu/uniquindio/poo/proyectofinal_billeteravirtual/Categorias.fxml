@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane prefHeight="764.0" prefWidth="1126.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.proyectofinal_billeteravirtual.ViewController.CategoriasController">
+   <children>
+      <BorderPane prefHeight="764.0" prefWidth="1126.0">
+         <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="1126.0" style="-fx-background-color: #4CAF50;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefWidth="250.0" text="Saldo: $$0.00" textFill="WHITE" fx:id="lblSaldo">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" prefWidth="250.0" text="Usuario" textFill="WHITE" fx:id="lblUsuario">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="80.0" prefWidth="626.0" spacing="20.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#irADashboard" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #2196F3; -fx-text-fill: white;" text="Dashboard">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#irATransacciones" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #2196F3; -fx-text-fill: white;" text="Transacciones">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#irACuentas" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #2196F3; -fx-text-fill: white;" text="Cuentas">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#cerrarSesion" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #F44336; -fx-text-fill: white;" text="Cerrar Sesión">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <VBox alignment="TOP_CENTER" prefHeight="684.0" prefWidth="1126.0" spacing="20.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Gestión de Categorías" textFill="#4CAF50">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="200.0" prefWidth="1126.0" spacing="20.0">
+                     <children>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="250.0">
+                           <children>
+                              <Label text="Nombre de la categoría:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtNombre" prefHeight="30.0" prefWidth="250.0" promptText="Ej: Alimentación">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label text="Descripción:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextArea fx:id="txtDescripcion" prefHeight="100.0" prefWidth="250.0" promptText="Ej: Gastos relacionados con alimentación">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </TextArea>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="250.0">
+                           <children>
+                              <Label text="Tipo de categoría:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="cmbTipoCategoria" prefHeight="30.0" prefWidth="250.0">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </ComboBox>
+                              <Label text="Categoría padre:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <ComboBox fx:id="cmbCategoriaPadre" prefHeight="30.0" prefWidth="250.0">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </ComboBox>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="250.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#crearCategoria" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="Crear Categoría">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#eliminarCategoria" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #F44336; -fx-text-fill: white;" text="Eliminar Categoría">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <TableView fx:id="tblCategorias" prefHeight="400.0" prefWidth="1086.0">
+                     <columns>
+                        <TableColumn fx:id="colNombre" prefWidth="400.0" text="Nombre" />
+                        <TableColumn fx:id="colDescripcion" prefWidth="685.0" text="Descripción" />
+                     </columns>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </TableView>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

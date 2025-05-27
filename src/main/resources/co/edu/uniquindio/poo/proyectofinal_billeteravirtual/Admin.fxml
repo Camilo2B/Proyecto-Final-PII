@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane prefHeight="764.0" prefWidth="1126.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.proyectofinal_billeteravirtual.ViewController.AdminController">
+   <children>
+      <BorderPane prefHeight="764.0" prefWidth="1126.0">
+         <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="1126.0" style="-fx-background-color: #3F51B5;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefWidth="250.0" text="Panel de Administración" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" prefWidth="250.0" text="Administrador" textFill="WHITE" fx:id="lblAdmin">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="80.0" prefWidth="626.0" spacing="20.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#cerrarSesion" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #F44336; -fx-text-fill: white;" text="Cerrar Sesión">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <VBox alignment="TOP_CENTER" prefHeight="684.0" prefWidth="1126.0" spacing="20.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Gestión de Usuarios" textFill="#3F51B5">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TableView fx:id="tblUsuarios" prefHeight="300.0" prefWidth="1086.0">
+                     <columns>
+                        <TableColumn fx:id="colId" prefWidth="150.0" text="ID" />
+                        <TableColumn fx:id="colNombre" prefWidth="200.0" text="Nombre" />
+                        <TableColumn fx:id="colEmail" prefWidth="250.0" text="Email" />
+                        <TableColumn fx:id="colTelefono" prefWidth="150.0" text="Teléfono" />
+                        <TableColumn fx:id="colSaldo" prefWidth="150.0" text="Saldo Total" />
+                        <TableColumn fx:id="colCuentas" prefWidth="100.0" text="Cuentas" />
+                        <TableColumn fx:id="colTransacciones" prefWidth="100.0" text="Transacciones" />
+                     </columns>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </TableView>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="1126.0" spacing="20.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#verDetallesUsuario" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #2196F3; -fx-text-fill: white;" text="Ver Detalles">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#bloquearUsuario" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #FF9800; -fx-text-fill: white;" text="Bloquear Usuario">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#eliminarUsuario" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #F44336; -fx-text-fill: white;" text="Eliminar Usuario">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Label text="Estadísticas del Sistema" textFill="#3F51B5">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <GridPane alignment="CENTER" hgap="20.0" vgap="20.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #E3F2FD; -fx-background-radius: 10;">
+                           <children>
+                              <Label text="Total de Usuarios">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblTotalUsuarios" text="0">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #E8F5E9; -fx-background-radius: 10;" GridPane.columnIndex="1">
+                           <children>
+                              <Label text="Total de Transacciones">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblTotalTransacciones" text="0">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #FFF3E0; -fx-background-radius: 10;" GridPane.columnIndex="2">
+                           <children>
+                              <Label text="Volumen Total">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblVolumenTotal" text="$$0.00">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </GridPane>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
