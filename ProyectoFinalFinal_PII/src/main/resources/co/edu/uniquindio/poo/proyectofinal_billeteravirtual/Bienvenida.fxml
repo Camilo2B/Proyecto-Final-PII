@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="764.0" prefWidth="1126.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.proyectofinal_billeteravirtual.ViewController.WelcomeViewController">
+   <children>
+      <ImageView fitHeight="772.0" fitWidth="1126.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Bienvenido.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnBienvenida" layoutX="501.0" layoutY="612.0" mnemonicParsing="false" onAction="#cambiarVista2" prefHeight="49.0" prefWidth="141.0" style="-fx-background-color: #EFB810; -fx-text-fill: black;" text="Ingresar">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="419.0" layoutY="543.0" prefHeight="49.0" prefWidth="362.0" text="a tu Billetera Virtual" textAlignment="CENTER" textFill="#979a98">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+         <effect>
+            <Lighting bumpInput="$null">
+               <light>
+                  <Light.Distant elevation="76.9" />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

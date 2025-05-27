@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane prefHeight="764.0" prefWidth="1126.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.proyectofinal_billeteravirtual.ViewController.TransaccionesController">
+   <left>
+      <VBox prefHeight="764.0" prefWidth="250.0" style="-fx-background-color: #2E7D32;">
+         <children>
+            <Label alignment="CENTER" prefHeight="80.0" prefWidth="250.0" text="Billetera Virtual" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Separator prefWidth="200.0" />
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="250.0">
+               <children>
+                  <Label fx:id="lblNombreUsuario" alignment="CENTER" prefWidth="250.0" text="Nombre de Usuario" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblSaldo" alignment="CENTER" prefWidth="250.0" text="Saldo: $0.00" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Separator prefWidth="200.0" />
+            <Button fx:id="btnDashboard" mnemonicParsing="false" onAction="#irADashboard" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #2E7D32; -fx-text-fill: white;" text="Dashboard">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnTransacciones" mnemonicParsing="false" onAction="#mostrarTransacciones" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #388E3C; -fx-text-fill: white;" text="Transacciones">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnPresupuestos" mnemonicParsing="false" onAction="#irAPresupuestos" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #2E7D32; -fx-text-fill: white;" text="Presupuestos">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCuentas" mnemonicParsing="false" onAction="#irACuentas" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #2E7D32; -fx-text-fill: white;" text="Cuentas">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCategorias" mnemonicParsing="false" onAction="#irACategorias" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #2E7D32; -fx-text-fill: white;" text="Categorías">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            <Button fx:id="btnCerrarSesion" mnemonicParsing="false" onAction="#cerrarSesion" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #F44336; -fx-text-fill: white;" text="Cerrar Sesión">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="764.0" prefWidth="876.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="876.0" style="-fx-background-color: #4CAF50;">
+               <children>
+                  <Label text="Transacciones" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <TabPane prefHeight="684.0" prefWidth="876.0" tabClosingPolicy="UNAVAILABLE">
+               <tabs>
+                  <Tab text="Historial de Transacciones">
+                     <content>
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" spacing="10.0">
+                                 <children>
+                                    <Label text="Filtrar por tipo:">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <ComboBox fx:id="cmbTipoTransaccion" prefWidth="150.0" />
+                                    <Button fx:id="btnFiltrar" mnemonicParsing="false" onAction="#filtrarTransacciones" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="Filtrar">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnLimpiarFiltro" mnemonicParsing="false" onAction="#limpiarFiltro" style="-fx-background-color: #F44336; -fx-text-fill: white;" text="Limpiar">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+                                 </padding>
+                              </HBox>
+                              <TableView fx:id="tblTransacciones" prefHeight="500.0" prefWidth="876.0">
+                                 <columns>
+                                    <TableColumn fx:id="colFecha" prefWidth="150.0" text="Fecha" />
+                                    <TableColumn fx:id="colTipo" prefWidth="150.0" text="Tipo" />
+                                    <TableColumn fx:id="colMonto" prefWidth="150.0" text="Monto" />
+                                    <TableColumn fx:id="colDescripcion" prefWidth="200.0" text="Descripción" />
+                                    <TableColumn fx:id="colCategoria" prefWidth="183.0" text="Categoría" />
+                                 </columns>
+                                 <VBox.margin>
+                                    <Insets left="20.0" right="20.0" />
+                                 </VBox.margin>
+                              </TableView>
+                           </children>
+                        </VBox>
+                     </content>
+                  </Tab>
+                  <Tab text="Nueva Transacción">
+                     <content>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                                 <children>
+                                    <Button fx:id="btnDeposito" mnemonicParsing="false" onAction="#seleccionarDeposito" prefHeight="80.0" prefWidth="150.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="Depósito">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnRetiro" mnemonicParsing="false" onAction="#seleccionarRetiro" prefHeight="80.0" prefWidth="150.0" style="-fx-background-color: #F44336; -fx-text-fill: white;" text="Retiro">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnTransferencia" mnemonicParsing="false" onAction="#seleccionarTransferencia" prefHeight="80.0" prefWidth="150.0" style="-fx-background-color: #2196F3; -fx-text-fill: white;" text="Transferencia">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets top="20.0" />
+                                 </padding>
+                              </HBox>
+                              <Separator prefWidth="200.0" />
+                              <GridPane hgap="10.0" vgap="15.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="300.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="Tipo de Transacción:" />
+                                    <Label fx:id="lblTipoTransaccion" text="Seleccione un tipo" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Monto:" GridPane.rowIndex="1" />
+                                    <TextField fx:id="txtMonto" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label text="Cuenta Origen:" GridPane.rowIndex="2" />
+                                    <ComboBox fx:id="cmbCuentaOrigen" prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Label fx:id="lblCuentaDestino" text="Cuenta Destino:" GridPane.rowIndex="3" />
+                                    <ComboBox fx:id="cmbCuentaDestino" prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <Label text="Descripción:" GridPane.rowIndex="4" />
+                                    <TextField fx:id="txtDescripcion" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                 </children>
+                              </GridPane>
+                              <Button fx:id="btnRealizarTransaccion" mnemonicParsing="false" onAction="#realizarTransaccion" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="Realizar Transacción">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
