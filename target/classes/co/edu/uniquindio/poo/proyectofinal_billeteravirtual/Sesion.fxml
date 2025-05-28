@@ -16,14 +16,9 @@
             <Image url="@Sesion.png" />
          </image>
       </ImageView>
-      <VBox alignment="CENTER" layoutX="363.0" layoutY="200.0" prefHeight="400.0" prefWidth="400.0" spacing="20.0">
+      <VBox alignment="CENTER" layoutX="417.0" layoutY="351.0" prefHeight="333.0" prefWidth="400.0" spacing="20.0">
          <children>
-            <Label text="Inicio de Sesión" textFill="#4CAF50">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <GridPane hgap="10.0" vgap="15.0">
+            <GridPane hgap="10.0" prefHeight="273.0" prefWidth="360.0" vgap="15.0">
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="120.0" />
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="250.0" />
@@ -34,39 +29,44 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Label text="ID:" />
-                  <Label text="Contraseña:" GridPane.rowIndex="1" />
+                  <Label text="ID:" textFill="WHITE" />
+                  <Label text="Contraseña:" textFill="WHITE" GridPane.rowIndex="2" />
                   <TextField fx:id="txtId" GridPane.columnIndex="1" />
-                  <PasswordField fx:id="txtPassword" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <CheckBox fx:id="chkAdmin" text="Iniciar como Administrador" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <PasswordField fx:id="txtPassword" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <CheckBox fx:id="chkAdmin" prefHeight="64.0" prefWidth="230.0" text="Iniciar como Administrador" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="16.0" />
+                     </font></CheckBox>
                </children>
                <padding>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </padding>
             </GridPane>
-            <HBox alignment="CENTER" spacing="20.0">
-               <children>
-                  <Button fx:id="btnIniciarSesion" mnemonicParsing="false" onAction="#iniciarSesion" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="Iniciar Sesión">
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="btnRegistrarse" mnemonicParsing="false" onAction="#irARegistro" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #2196F3; -fx-text-fill: white;" text="Registrarse">
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                  </Button>
-               </children>
-            </HBox>
-            <Button fx:id="btnVolver" mnemonicParsing="false" onAction="#volver" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #F44336; -fx-text-fill: white;" text="Volver">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Button>
+            <HBox alignment="CENTER" spacing="20.0" />
          </children>
          <padding>
             <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
          </padding>
       </VBox>
+      <Button fx:id="btnIniciarSesion" layoutX="826.0" layoutY="432.0" mnemonicParsing="false" onAction="#iniciarSesion" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #EFB810; -fx-text-fill: black;" text="Iniciar Sesión">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRegistrarse" layoutX="826.0" layoutY="497.0" mnemonicParsing="false" onAction="#irARegistro" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #FF7C39; -fx-text-fill: black;" text="Registrarse">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnVolver" layoutX="851.0" layoutY="567.0" mnemonicParsing="false" onAction="#volver" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #F5C15B; -fx-text-fill: black;" text="Volver">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="475.0" layoutY="334.0" text="Inicio de Sesión" textFill="#ffe51c">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

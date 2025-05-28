@@ -149,7 +149,7 @@
                                     <Font name="System Bold" size="16.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="lblVolumenTotal" text="$$0.00">
+                              <Label fx:id="lblVolumenTotal" text="0.00">
                                  <font>
                                     <Font size="24.0" />
                                  </font>

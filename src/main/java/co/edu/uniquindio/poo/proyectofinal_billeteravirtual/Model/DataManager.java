@@ -183,6 +183,12 @@ public class DataManager {
             admin.setCuentas(cuentasAdmin);
 
             administradores.add(admin);
+
+            System.out.println("Administrador creado:");
+            System.out.println("ID: " + admin.getIdGeneral());
+            System.out.println("Nombre: " + admin.getNombre());
+            System.out.println("Password: " + admin.getPassword());
+            System.out.println("Total administradores: " + administradores.size());
         } catch (Exception e) {
             System.err.println("Error al inicializar datos de prueba: " + e.getMessage());
             e.printStackTrace();
@@ -228,10 +234,24 @@ public class DataManager {
     }
 
     public Administrador buscarAdministrador(String idAdmin) {
-        return administradores.stream()
+        System.out.println("=== BUSCAR ADMINISTRADOR ===");
+        System.out.println("ID buscado: '" + idAdmin + "'");
+        System.out.println("Total administradores en lista: " + administradores.size());
+
+        for (Administrador admin : administradores) {
+            System.out.println("Admin en lista - ID: '" + admin.getIdGeneral() + "', Nombre: " + admin.getNombre());
+            System.out.println("¿IDs iguales? " + admin.getIdGeneral().equals(idAdmin));
+        }
+
+        Administrador resultado = administradores.stream()
                 .filter(a -> a.getIdGeneral().equals(idAdmin))
                 .findFirst()
                 .orElse(null);
+
+        System.out.println("Resultado de búsqueda: " + (resultado != null ? resultado.getNombre() : "null"));
+        System.out.println("=== FIN BUSCAR ADMINISTRADOR ===");
+
+        return resultado;
     }
 
     public LinkedList<Administrador> getAdministradores() {

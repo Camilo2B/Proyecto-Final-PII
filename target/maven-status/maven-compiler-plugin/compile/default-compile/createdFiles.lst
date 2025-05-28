@@ -66,6 +66,7 @@ co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\TransaccionCreator.cl
 co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\Persona.class
 co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\Cuenta$1.class
 co\edu\uniquindio\poo\proyectofinal_billeteravirtual\ViewController\TransaccionesController$1.class
+co\edu\uniquindio\poo\proyectofinal_billeteravirtual\ViewController\AdminController.class
 co\edu\uniquindio\poo\proyectofinal_billeteravirtual\ViewController\RolViewController.class
 co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\Presupuesto.class
 co\edu\uniquindio\poo\proyectofinal_billeteravirtual\ViewController\WelcomeViewController.class

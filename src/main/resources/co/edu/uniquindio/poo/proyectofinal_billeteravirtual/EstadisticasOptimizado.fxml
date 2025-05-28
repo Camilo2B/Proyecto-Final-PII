@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.chart.BarChart?>
 <?import javafx.scene.chart.CategoryAxis?>
@@ -23,9 +30,14 @@
 
 <BorderPane prefHeight="764.0" prefWidth="1126.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.proyectofinal_billeteravirtual.ViewController.EstadisticasControllerOptimizado">
    <left>
-      <VBox prefHeight="764.0" prefWidth="250.0" style="-fx-background-color: #2E7D32;">
+      <VBox prefHeight="764.0" prefWidth="250.0" style="-fx-background-color: F5C15B; -fx-border-width: 2; -fx-border-color: #000000;">
          <children>
-            <Label alignment="CENTER" prefHeight="80.0" prefWidth="250.0" text="Billetera Virtual" textFill="WHITE">
+            <ImageView fitHeight="55.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" scaleX="1.1" scaleY="1.5" translateX="23.0" translateY="25.0">
+               <image>
+                  <Image url="@WallCket.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="53.0" prefWidth="191.0" scaleX="1.1" scaleY="1.2" textFill="WHITE" translateX="23.0" translateY="-30.0">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
@@ -33,12 +45,12 @@
             <Separator prefWidth="200.0" />
             <VBox alignment="CENTER" prefHeight="100.0" prefWidth="250.0">
                <children>
-                  <Label fx:id="lblNombreUsuario" alignment="CENTER" prefWidth="250.0" text="Nombre de Usuario" textFill="WHITE">
+                  <Label fx:id="lblNombreUsuario" alignment="CENTER" prefWidth="250.0" text="Nombre de Usuario">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </Label>
-                  <Label fx:id="lblSaldo" alignment="CENTER" prefWidth="250.0" text="Saldo: $$0.00" textFill="WHITE">
+                  <Label fx:id="lblSaldo" alignment="CENTER" prefWidth="250.0" text="Saldo: $$0.00">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -48,7 +60,7 @@
             <Separator prefWidth="200.0" />
             <VBox alignment="CENTER" prefHeight="400.0" prefWidth="250.0" spacing="10.0">
                <children>
-                  <Button fx:id="btnDashboard" mnemonicParsing="false" onAction="#irADashboard" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #4CAF50;" text="Dashboard" textFill="WHITE">
+                  <Button fx:id="btnDashboard" mnemonicParsing="false" onAction="#irADashboard" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #d2691e;" text="Dashboard" textFill="#462323">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -64,7 +76,7 @@
             <Separator prefWidth="200.0" />
             <VBox alignment="CENTER" prefHeight="100.0" prefWidth="250.0">
                <children>
-                  <Button fx:id="btnCerrarSesion" mnemonicParsing="false" onAction="#cerrarSesion" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #E53935;" text="Cerrar Sesión" textFill="WHITE">
+                  <Button fx:id="btnCerrarSesion" mnemonicParsing="false" onAction="#cerrarSesion" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: FF7C39;" text="Cerrar Sesión" textFill="#462323">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -80,7 +92,7 @@
    <center>
       <VBox prefHeight="764.0" prefWidth="876.0">
          <children>
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="876.0" spacing="10.0" style="-fx-background-color: #E8F5E9;">
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="876.0" spacing="10.0" style="-fx-background-color: #F5C15B; -fx-border-width: 2; -fx-border-color: #000000;">
                <children>
                   <Label text="Período:">
                      <font>
@@ -112,7 +124,7 @@
                         <Tooltip text="Seleccione la fecha de fin" />
                      </tooltip>
                   </DatePicker>
-                  <Button fx:id="btnActualizar" mnemonicParsing="false" onAction="#actualizarGraficos" style="-fx-background-color: #4CAF50;" text="Actualizar" textFill="WHITE">
+                  <Button fx:id="btnActualizar" mnemonicParsing="false" onAction="#actualizarGraficos" style="-fx-background-color: d2691e;" text="Actualizar" textFill="#462323">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -134,12 +146,12 @@
                               <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                                  <children>
                                     <BarChart fx:id="barChartCategorias" prefHeight="550.0" prefWidth="876.0" title="Gastos por Categoría">
-                                      <xAxis>
-                                        <CategoryAxis label="Categoría" side="BOTTOM" fx:id="xAxisCategorias" />
-                                      </xAxis>
-                                      <yAxis>
-                                        <NumberAxis fx:id="yAxisCategorias" label="Monto ($)" side="LEFT" />
-                                      </yAxis>
+                                       <xAxis>
+                                          <CategoryAxis label="Categoría" side="BOTTOM" fx:id="xAxisCategorias" />
+                                       </xAxis>
+                                       <yAxis>
+                                          <NumberAxis fx:id="yAxisCategorias" label="Monto ($)" side="LEFT" />
+                                       </yAxis>
                                     </BarChart>
                                  </children>
                               </VBox>
@@ -159,12 +171,12 @@
                               <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                                  <children>
                                     <LineChart fx:id="lineChartTendencia" prefHeight="550.0" prefWidth="876.0" title="Tendencia de Gastos e Ingresos">
-                                      <xAxis>
-                                        <CategoryAxis label="Fecha" side="BOTTOM" fx:id="xAxisTendencia" />
-                                      </xAxis>
-                                      <yAxis>
-                                        <NumberAxis fx:id="yAxisTendencia" label="Monto ($)" side="LEFT" />
-                                      </yAxis>
+                                       <xAxis>
+                                          <CategoryAxis label="Fecha" side="BOTTOM" fx:id="xAxisTendencia" />
+                                       </xAxis>
+                                       <yAxis>
+                                          <NumberAxis fx:id="yAxisTendencia" label="Monto ($)" side="LEFT" />
+                                       </yAxis>
                                     </LineChart>
                                  </children>
                               </VBox>

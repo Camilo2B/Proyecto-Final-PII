@@ -63,13 +63,25 @@ public class AuthenticationService {
      * @return true si la autenticación fue exitosa, false en caso contrario
      */
     public boolean autenticarAdmin(String idAdmin, String password) {
+        System.out.println("Intentando autenticar admin con ID: " + idAdmin);
+        System.out.println("Password proporcionado: " + password);
+
         Administrador admin = dataManager.buscarAdministrador(idAdmin);
+        System.out.println("Admin encontrado: " + (admin != null ? admin.getNombre() : "null"));
+
+        if (admin != null) {
+            System.out.println("Password del admin en BD: " + admin.getPassword());
+            System.out.println("¿Passwords coinciden? " + admin.getPassword().equals(password));
+        }
+
         if (admin == null || !admin.getPassword().equals(password)) {
+            System.out.println("Autenticación fallida");
             return false;
         }
 
         this.adminAutenticado = admin;
         this.usuarioAutenticado = null;
+        System.out.println("Autenticación exitosa para admin: " + admin.getNombre());
         return true;
     }
 

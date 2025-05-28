@@ -66,8 +66,8 @@ public class SesionViewController {
             }
 
             // Obtener datos del formulario
-            String id = txtId.getText();
-            String password = txtPassword.getText();
+            String id = txtId.getText().trim();
+            String password = txtPassword.getText().trim();
             boolean esAdmin = chkAdmin.isSelected();
 
             System.out.println("Intentando autenticar: ID=" + id + ", esAdmin=" + esAdmin);

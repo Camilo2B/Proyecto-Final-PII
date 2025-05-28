@@ -13,9 +13,9 @@
    <children>
       <BorderPane prefHeight="764.0" prefWidth="1126.0">
          <top>
-            <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="1126.0" style="-fx-background-color: #4CAF50;" BorderPane.alignment="CENTER">
+            <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="1126.0" style="-fx-border-width: 2; -fx-border-color: #000000; -fx-background-color: #F5C15B;" BorderPane.alignment="CENTER">
                <children>
-                  <Label alignment="CENTER" prefWidth="250.0" text="Saldo: $$0.00" textFill="WHITE" fx:id="lblSaldo">
+                  <Label fx:id="lblSaldo" alignment="CENTER" prefWidth="250.0" text="Saldo: $$0.00">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
@@ -23,24 +23,24 @@
                         <Insets left="20.0" />
                      </HBox.margin>
                   </Label>
-                  <Label alignment="CENTER" prefWidth="250.0" text="Usuario" textFill="WHITE" fx:id="lblUsuario">
+                  <Label fx:id="lblUsuario" alignment="CENTER" prefWidth="250.0" text="Usuario">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
                   <HBox alignment="CENTER_RIGHT" prefHeight="80.0" prefWidth="626.0" spacing="20.0">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#irADashboard" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #2196F3; -fx-text-fill: white;" text="Dashboard">
+                        <Button mnemonicParsing="false" onAction="#irADashboard" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: d2691e; -fx-text-fill: black; -fx-border-width: 1; -fx-border-color: #000000;" text="Dashboard">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" onAction="#irATransacciones" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #2196F3; -fx-text-fill: white;" text="Transacciones">
+                        <Button mnemonicParsing="false" onAction="#irATransacciones" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: d2691e; -fx-text-fill: black; -fx-border-width: 1; -fx-border-color: #000000;" text="Transacciones">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" onAction="#cerrarSesion" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #F44336; -fx-text-fill: white;" text="Cerrar Sesión">
+                        <Button mnemonicParsing="false" onAction="#cerrarSesion" prefHeight="40.0" prefWidth="150.0" style="-fx-border-width: 1; -fx-border-color: #000000; -fx-background-color: #FF7C39;" text="Cerrar Sesión">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
@@ -54,9 +54,9 @@
             </HBox>
          </top>
          <center>
-            <VBox alignment="TOP_CENTER" prefHeight="684.0" prefWidth="1126.0" spacing="20.0" BorderPane.alignment="CENTER">
+            <VBox alignment="TOP_CENTER" prefHeight="684.0" prefWidth="1126.0" spacing="20.0" style="-fx-border-width: 2; -fx-border-color: #000000; -fx-background-color: #FFF8E1;" BorderPane.alignment="CENTER">
                <children>
-                  <Label text="Gestión de Presupuestos" textFill="#4CAF50">
+                  <Label text="Gestión de Presupuestos" textFill="#8d7d07">
                      <font>
                         <Font name="System Bold" size="24.0" />
                      </font>
@@ -110,12 +110,12 @@
                         </VBox>
                         <VBox alignment="CENTER" prefHeight="150.0" prefWidth="250.0">
                            <children>
-                              <Button mnemonicParsing="false" onAction="#crearPresupuesto" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="Crear Presupuesto">
+                              <Button mnemonicParsing="false" onAction="#crearPresupuesto" prefHeight="40.0" prefWidth="200.0" style="-fx-border-width: 1; -fx-border-color: #000000; -fx-background-color: d2691e;" text="Crear Presupuesto">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
                                  </font>
                               </Button>
-                              <Button mnemonicParsing="false" onAction="#eliminarPresupuesto" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #F44336; -fx-text-fill: white;" text="Eliminar Presupuesto">
+                              <Button mnemonicParsing="false" onAction="#eliminarPresupuesto" prefHeight="40.0" prefWidth="200.0" style="-fx-border-width: 1; -fx-border-color: #000000; -fx-background-color: #FF7C39;" text="Eliminar Presupuesto">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
                                  </font>
@@ -136,7 +136,7 @@
                         <TableColumn fx:id="colCategoria" prefWidth="300.0" text="Categoría" />
                         <TableColumn fx:id="colMontoTotal" prefWidth="200.0" text="Monto Total" />
                         <TableColumn fx:id="colMontoGastado" prefWidth="200.0" text="Monto Gastado" />
-                        <TableColumn fx:id="colPorcentaje" prefWidth="183.0" text="%% Utilizado" />
+                        <TableColumn fx:id="colPorcentaje" prefWidth="183.0" text="Utilizado" />
                      </columns>
                      <VBox.margin>
                         <Insets left="20.0" right="20.0" />
