@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.paint.*?>
 <?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -8,19 +9,19 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="764.0" prefWidth="1126.0" xmlns="http://javafx.com/javafx/21.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.proyectofinal_billeteravirtual.ViewController.WelcomeViewController">
+<AnchorPane prefHeight="764.0" prefWidth="1126.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.proyectofinal_billeteravirtual.ViewController.WelcomeViewController">
    <children>
       <ImageView fitHeight="772.0" fitWidth="1126.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Bienvenido.png"/>
+            <Image url="@Bienvenido.png" />
          </image>
       </ImageView>
-      <Button fx:id="btnBienvenida" layoutX="500.0" layoutY="584.0" mnemonicParsing="false" onAction="#cambiarVista2" prefHeight="49.0" prefWidth="141.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="Ingresar">
+      <Button fx:id="btnBienvenida" layoutX="493.0" layoutY="624.0" mnemonicParsing="false" onAction="#cambiarVista2" prefHeight="49.0" prefWidth="141.0" style="-fx-background-color: #EFB810; -fx-text-fill: black; -fx-border-width: 1; -fx-border-color: #000000;" text="Ingresar">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Button>
-      <Label layoutX="363.0" layoutY="500.0" text="Bienvenido a tu Billetera Virtual" textFill="#4CAF50">
+      <Label layoutX="450.0" layoutY="557.0" text="a tu Billetera Virtual" textFill="#aeb8af">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>

@@ -11,22 +11,27 @@
 
 <BorderPane prefHeight="764.0" prefWidth="1126.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.proyectofinal_billeteravirtual.ViewController.DashboardController">
    <left>
-      <VBox prefHeight="764.0" prefWidth="250.0" style="-fx-background-color: #2E7D32;">
+      <VBox prefHeight="764.0" prefWidth="250.0" style="-fx-background-color: #F5C15B; -fx-border-width: 2; -fx-border-color: #000000;">
          <children>
-            <Label alignment="CENTER" prefHeight="80.0" prefWidth="250.0" text="Billetera Virtual" textFill="WHITE">
+            <Label alignment="CENTER" prefHeight="80.0" prefWidth="250.0" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
             </Label>
+            <ImageView fitHeight="50.0" fitWidth="211.0" pickOnBounds="true" preserveRatio="true" scaleX="1.1" scaleY="1.5" translateX="23.0" translateY="-50.0">
+               <image>
+                  <Image url="@WallCket.png" />
+               </image>
+            </ImageView>
             <Separator prefWidth="200.0" />
-            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="250.0">
+            <VBox alignment="CENTER" prefHeight="106.0" prefWidth="246.0" style="-fx-border-width: 1; -fx-border-color: #000000;">
                <children>
-                  <Label fx:id="lblNombreUsuario" alignment="CENTER" prefWidth="250.0" text="Nombre de Usuario" textFill="WHITE">
+                  <Label fx:id="lblNombreUsuario" alignment="CENTER" prefWidth="250.0" text="Nombre de Usuario">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </Label>
-                  <Label fx:id="lblSaldo" alignment="CENTER" prefWidth="250.0" text="Saldo: $$0.00" textFill="WHITE">
+                  <Label fx:id="lblSaldo" alignment="CENTER" prefWidth="250.0" text="Saldo: $$0.00">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -34,38 +39,38 @@
                </children>
             </VBox>
             <Separator prefWidth="200.0" />
-            <Button fx:id="btnDashboard" mnemonicParsing="false" onAction="#mostrarDashboard" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #388E3C; -fx-text-fill: white;" text="Dashboard">
+            <Button fx:id="btnDashboard" mnemonicParsing="false" onAction="#mostrarDashboard" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #EFB810; -fx-border-width: 1; -fx-border-color: #000000; -fx-text-fill: black;" text="Dashboard">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="btnTransacciones" mnemonicParsing="false" onAction="#irATransacciones" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #2E7D32; -fx-text-fill: white;" text="Transacciones">
+            <Button fx:id="btnTransacciones" mnemonicParsing="false" onAction="#irATransacciones" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #EFB810; -fx-border-width: 1; -fx-border-color: #000000; -fx-text-fill: black;" text="Transacciones">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button fx:id="btnPresupuestos" mnemonicParsing="false" onAction="#irAPresupuestos" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #2E7D32; -fx-text-fill: white;" text="Presupuestos">
+            <Button fx:id="btnPresupuestos" mnemonicParsing="false" onAction="#irAPresupuestos" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #EFB810; -fx-border-width: 1; -fx-border-color: #000000; -fx-text-fill: black;" text="Presupuestos">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button fx:id="btnEstadisticas" mnemonicParsing="false" onAction="#irAEstadisticas" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #2E7D32; -fx-text-fill: white;" text="Estadísticas">
+            <Button fx:id="btnEstadisticas" mnemonicParsing="false" onAction="#irAEstadisticas" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #EFB810; -fx-border-width: 1; -fx-border-color: #000000; -fx-text-fill: black;" text="Estadísticas">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button fx:id="btnCuentas" mnemonicParsing="false" onAction="#irACuentas" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #2E7D32; -fx-text-fill: white;" text="Cuentas">
+            <Button fx:id="btnCuentas" mnemonicParsing="false" onAction="#irACuentas" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #EFB810; -fx-border-width: 1; -fx-border-color: #000000; -fx-text-fill: black;" text="Cuentas">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button fx:id="btnCategorias" mnemonicParsing="false" onAction="#irACategorias" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #2E7D32; -fx-text-fill: white;" text="Categorías">
+            <Button fx:id="btnCategorias" mnemonicParsing="false" onAction="#irACategorias" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #EFB810; -fx-border-width: 1; -fx-border-color: #000000; -fx-text-fill: black;" text="Categorías">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
             <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
-            <Button fx:id="btnCerrarSesion" mnemonicParsing="false" onAction="#cerrarSesion" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #F44336; -fx-text-fill: white;" text="Cerrar Sesión">
+            <Button fx:id="btnCerrarSesion" mnemonicParsing="false" onAction="#cerrarSesion" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #FF7C39; -fx-border-width: 1; -fx-border-color: #000000; -fx-text-fill: black;" text="Cerrar Sesión">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
@@ -79,9 +84,9 @@
    <center>
       <VBox prefHeight="764.0" prefWidth="876.0" BorderPane.alignment="CENTER">
          <children>
-            <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="876.0" style="-fx-background-color: #E8F5E9;">
+            <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="876.0" style="-fx-background-color: #F5C15B; -fx-border-width: 2; -fx-border-color: #000000;">
                <children>
-                  <Label text="Dashboard" textFill="#2e7d32">
+                  <Label text="Dashboard">
                      <font>
                         <Font name="System Bold" size="24.0" />
                      </font>
@@ -93,27 +98,27 @@
             </HBox>
             <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="684.0" prefWidth="876.0" style="-fx-background-color: white;">
                <content>
-                  <VBox prefHeight="682.0" prefWidth="874.0" spacing="20.0">
+                  <VBox prefHeight="682.0" prefWidth="874.0" spacing="20.0" style="-fx-background-color: #FFF8E1;">
                      <children>
                         <HBox prefHeight="150.0" prefWidth="874.0" spacing="20.0">
                            <children>
-                              <VBox alignment="CENTER" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #E8F5E9; -fx-border-color: #4CAF50; -fx-border-width: 2;">
+                              <VBox alignment="CENTER" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #FFE0B2; -fx-border-color: #000000; -fx-border-width: 2;">
                                  <children>
-                                    <Label text="Saldo Total" textFill="#4CAF50">
+                                    <Label text="Saldo Total" textFill="#8d7d07">
                                        <font>
                                           <Font name="System Bold" size="18.0" />
                                        </font>
                                     </Label>
-                                    <Label fx:id="lblSaldoTotal" text="$$0.00">
+                                    <Label fx:id="lblSaldoTotal" text="0.00">
                                        <font>
                                           <Font size="24.0" />
                                        </font>
                                     </Label>
                                  </children>
                               </VBox>
-                              <VBox alignment="CENTER" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #E8F5E9; -fx-border-color: #4CAF50; -fx-border-width: 2;">
+                              <VBox alignment="CENTER" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #FFE0B2; -fx-border-color: #000000; -fx-border-width: 2;">
                                  <children>
-                                    <Label text="Cuentas" textFill="#4CAF50">
+                                    <Label text="Cuentas" textFill="#8d7d07">
                                        <font>
                                           <Font name="System Bold" size="18.0" />
                                        </font>
@@ -125,9 +130,9 @@
                                     </Label>
                                  </children>
                               </VBox>
-                              <VBox alignment="CENTER" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #E8F5E9; -fx-border-color: #4CAF50; -fx-border-width: 2;">
+                              <VBox alignment="CENTER" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #FFE0B2; -fx-border-color: #000000; -fx-border-width: 2;">
                                  <children>
-                                    <Label text="Presupuestos" textFill="#4CAF50">
+                                    <Label text="Presupuestos" textFill="#8d7d07">
                                        <font>
                                           <Font name="System Bold" size="18.0" />
                                        </font>
@@ -146,7 +151,7 @@
                         </HBox>
                         <VBox prefWidth="874.0" spacing="10.0">
                            <children>
-                              <Label text="Últimas Transacciones" textFill="#4CAF50">
+                              <Label text="Últimas Transacciones" textFill="#8d7d07">
                                  <font>
                                     <Font name="System Bold" size="18.0" />
                                  </font>
@@ -166,7 +171,7 @@
                         </VBox>
                         <VBox prefWidth="874.0" spacing="10.0">
                            <children>
-                              <Label text="Presupuestos Activos" textFill="#4CAF50">
+                              <Label text="Presupuestos Activos" textFill="#8d7d07">
                                  <font>
                                     <Font name="System Bold" size="18.0" />
                                  </font>

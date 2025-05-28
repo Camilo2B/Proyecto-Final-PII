@@ -2,6 +2,12 @@ package co.edu.uniquindio.poo.proyectofinal_billeteravirtual.ViewController;
 
 import co.edu.uniquindio.poo.proyectofinal_billeteravirtual.Model.AuthenticationService;
 import co.edu.uniquindio.poo.proyectofinal_billeteravirtual.Model.BilleteraService;
+import co.edu.uniquindio.poo.proyectofinal_billeteravirtual.Model.Categoria;
+import co.edu.uniquindio.poo.proyectofinal_billeteravirtual.Model.Command.Command;
+import co.edu.uniquindio.poo.proyectofinal_billeteravirtual.Model.Command.CommandInvoker;
+import co.edu.uniquindio.poo.proyectofinal_billeteravirtual.Model.Command.DepositoCommand;
+import co.edu.uniquindio.poo.proyectofinal_billeteravirtual.Model.Command.RetiroCommand;
+import co.edu.uniquindio.poo.proyectofinal_billeteravirtual.Model.Command.TransferenciaCommand;
 import co.edu.uniquindio.poo.proyectofinal_billeteravirtual.Model.Cuenta;
 import co.edu.uniquindio.poo.proyectofinal_billeteravirtual.Model.TipoTransaccion;
 import co.edu.uniquindio.poo.proyectofinal_billeteravirtual.Model.TransaccionFactory;
@@ -137,6 +143,9 @@ public class TransaccionesController {
                 e.printStackTrace();
             }
         }
+
+        // Sincronizar el usuario con BilleteraService
+        billeteraService.setUsuarioActual(usuarioActual);
 
         // Configurar la información del usuario
         lblNombreUsuario.setText(usuarioActual.getNombre());
@@ -307,6 +316,9 @@ public class TransaccionesController {
      */
     @FXML
     private void realizarTransaccion() {
+        // Sincronizar el usuario con BilleteraService antes de realizar la transacción
+        billeteraService.setUsuarioActual(usuarioActual);
+
         // Validar campos
         if (tipoTransaccionSeleccionado == null) {
             sceneController.mostrarError("Error", "Debe seleccionar un tipo de transacción");
@@ -341,8 +353,8 @@ public class TransaccionesController {
             return;
         }
 
-        String idCuentaOrigen = cmbCuentaOrigen.getValue().getIdCuenta();
-        String idCuentaDestino = null;
+        final String idCuentaOrigen = cmbCuentaOrigen.getValue().getIdCuenta();
+        final String idCuentaDestino;
 
         if (tipoTransaccionSeleccionado == TipoTransaccion.TRANSFERENCIA) {
             idCuentaDestino = cmbCuentaDestino.getValue().getIdCuenta();
@@ -351,20 +363,57 @@ public class TransaccionesController {
                 sceneController.mostrarError("Error", "La cuenta de origen y destino no pueden ser la misma");
                 return;
             }
+        } else {
+            idCuentaDestino = null;
         }
 
-        // Realizar la transacción
+        // Obtener la cuenta origen
+        Cuenta cuentaOrigen = usuarioActual.getCuentasAsociadas().stream()
+                .filter(c -> c.getIdCuenta().equals(idCuentaOrigen))
+                .findFirst()
+                .orElse(null);
+
+        if (cuentaOrigen == null) {
+            sceneController.mostrarError("Error", "No se encontró la cuenta de origen");
+            return;
+        }
+
+        // Obtener descripción y categoría
+        String descripcion = txtDescripcion.getText().trim();
+        if (descripcion.isEmpty()) {
+            descripcion = "Transacción " + tipoTransaccionSeleccionado.toString().toLowerCase();
+        }
+
+        // Para simplificar, usar categoría null por ahora (se puede mejorar después)
+        Categoria categoria = null;
+
+        // Realizar la transacción usando comandos
         boolean transaccionExitosa = false;
+        Command comando = null;
 
         switch (tipoTransaccionSeleccionado) {
             case DEPOSITO:
-                transaccionExitosa = billeteraService.realizarDeposito(monto, idCuentaOrigen);
+                comando = new DepositoCommand(usuarioActual, cuentaOrigen, monto, descripcion, categoria);
+                transaccionExitosa = CommandInvoker.getInstance().ejecutarComando(comando);
                 break;
             case RETIRO:
-                transaccionExitosa = billeteraService.realizarRetiro(monto, idCuentaOrigen);
+                comando = new RetiroCommand(usuarioActual, cuentaOrigen, monto, descripcion, categoria);
+                transaccionExitosa = CommandInvoker.getInstance().ejecutarComando(comando);
                 break;
             case TRANSFERENCIA:
-                transaccionExitosa = billeteraService.realizarTransferencia(monto, idCuentaOrigen, idCuentaDestino);
+                // Para transferencias, necesitamos la cuenta destino
+                Cuenta cuentaDestino = usuarioActual.getCuentasAsociadas().stream()
+                        .filter(c -> c.getIdCuenta().equals(idCuentaDestino))
+                        .findFirst()
+                        .orElse(null);
+
+                if (cuentaDestino == null) {
+                    sceneController.mostrarError("Error", "No se encontró la cuenta de destino");
+                    return;
+                }
+
+                comando = new TransferenciaCommand(usuarioActual, cuentaOrigen, usuarioActual, cuentaDestino, monto, descripcion, categoria);
+                transaccionExitosa = CommandInvoker.getInstance().ejecutarComando(comando);
                 break;
         }
 

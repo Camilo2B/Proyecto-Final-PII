@@ -1,48 +1,71 @@
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/App.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/HelloApplication.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/HelloController.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/Administrador.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/AuthenticationService.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/BilleteraService.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/BilleteraVirtual.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/Categoria.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/CategoriaManager.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/ConfiguracionBilletera.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/Cuenta.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/DataManager.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/DepositoFactory.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/DepositoStrategy.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/Encriptacion.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/FacadeBilletera.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/ICuenta.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/OperacionContext.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/OperacionStrategy.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/Persona.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/Pin.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/Presupuesto.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/PresupuestoManager.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/ReporteService.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/RetiroFactory.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/RetiroStrategy.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/SeguridadDecorator.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/SeguridadDosPasos.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/TipoCuenta.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/TipoTransaccion.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/Transaccion.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/TransaccionCreator.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/TransaccionDeposito.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/TransaccionFactory.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/TransaccionRetiro.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/TransaccionTransferencia.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/TransferenciaFactory.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/TransferenciaStrategy.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/Model/Usuario.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/ViewController/DashboardController.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/ViewController/RegistroViewController.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/ViewController/RolViewController.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/ViewController/SceneController.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/ViewController/SesionViewController.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/ViewController/TransaccionesController.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/ViewController/UsuarioViewController.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/co/edu/uniquindio/poo/proyectofinal_billeteravirtual/ViewController/WelcomeViewController.java
-/home/david/GitHub/P2_PF_Billetera/P2_PF_BILLETERA/ProyectoFinalPatrones/ProyectoFinal_BilleteraVirtual/src/main/java/module-info.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\App.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\HelloApplication.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\HelloController.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Launcher.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\Administrador.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\AuthenticationService.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\AuthService.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\BilleteraService.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\BilleteraVirtual.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\Builder\FormatoReporte.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\Builder\Reporte.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\Builder\ReporteBuilder.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\Builder\ReporteConcreteBuilder.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\Builder\ReporteDirector.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\Categoria.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\CategoriaManager.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\Command\Command.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\Command\CommandInvoker.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\Command\DepositoCommand.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\Command\RetiroCommand.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\Command\TransferenciaCommand.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\Composite\CategoriaSimple.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\Composite\ComponenteCategoria.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\Composite\GestorCategorias.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\Composite\GrupoCategoria.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\ConfiguracionBilletera.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\Cuenta.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\DataManager.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\DepositoFactory.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\DepositoStrategy.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\Encriptacion.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\FacadeBilletera.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\ICuenta.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\LoggerService.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\OperacionContext.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\OperacionStrategy.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\Persona.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\Pin.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\Presupuesto.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\PresupuestoManager.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\ReporteService.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\RetiroFactory.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\RetiroStrategy.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\SeguridadDecorator.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\SeguridadDosPasos.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\TipoCuenta.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\TipoTransaccion.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\Transaccion.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\TransaccionCreator.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\TransaccionDeposito.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\TransaccionFactory.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\TransaccionRetiro.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\TransaccionTransferencia.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\TransferenciaFactory.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\TransferenciaStrategy.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\Model\Usuario.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\util\PerformanceOptimizer.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\ViewController\CategoriasController.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\ViewController\CuentasController.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\ViewController\DashboardController.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\ViewController\EstadisticasController.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\ViewController\EstadisticasControllerOptimizado.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\ViewController\PresupuestosController.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\ViewController\RegistroViewController.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\ViewController\RolViewController.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\ViewController\SceneController.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\ViewController\SesionViewController.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\ViewController\TransaccionesController.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\ViewController\UsuarioViewController.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\co\edu\uniquindio\poo\proyectofinal_billeteravirtual\ViewController\WelcomeViewController.java
+C:\Users\ASUS\Documents\Programación 2\Proyecto-FinalRepositorio\src\main\java\module-info.java

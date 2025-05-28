@@ -87,7 +87,7 @@ public class EstadisticasControllerOptimizado {
         if (!billeteraService.hayUsuarioLogueado()) {
             // Si no hay usuario autenticado, redirigir a la vista de inicio de sesión
             try {
-                sceneController.cambiarAVista(SceneController.VISTA_SESION);
+                sceneController.cambiarEscena(SceneController.VISTA_SESION);
                 return;
             } catch (IOException e) {
                 mostrarError("Error", "No se pudo cargar la vista de inicio de sesión: " + e.getMessage());
@@ -498,7 +498,7 @@ public class EstadisticasControllerOptimizado {
     @FXML
     private void irADashboard() {
         try {
-            sceneController.cambiarAVista(SceneController.VISTA_DASHBOARD);
+            sceneController.cambiarEscena(SceneController.VISTA_DASHBOARD);
         } catch (IOException e) {
             mostrarError("Error", "No se pudo cargar el dashboard: " + e.getMessage());
             e.printStackTrace();
@@ -518,7 +518,7 @@ public class EstadisticasControllerOptimizado {
             billeteraService.cerrarSesion();
 
             // Navegar a la vista de inicio de sesión
-            sceneController.cambiarAVista(SceneController.VISTA_SESION);
+            sceneController.cambiarEscena(SceneController.VISTA_SESION);
         } catch (IOException e) {
             mostrarError("Error", "No se pudo cerrar sesión: " + e.getMessage());
             e.printStackTrace();

@@ -25,6 +25,9 @@ public class Categoria implements Serializable {
     }
 
     public Categoria(String nombre, String descripcion) {
+        this.idCategoria = java.util.UUID.randomUUID().toString();
+        this.nombre = nombre;
+        this.descripcion = descripcion;
     }
 
     public String getIdCategoria() {

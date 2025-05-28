@@ -770,6 +770,26 @@ public class BilleteraService {
     }
 
     /**
+     * Elimina una transacción del sistema
+     * @param transaccion Transacción a eliminar
+     * @return true si se eliminó correctamente, false en caso contrario
+     */
+    public boolean eliminarTransaccion(TransaccionFactory transaccion) {
+        if (transaccion == null) {
+            return false;
+        }
+
+        try {
+            dataManager.getTransacciones().remove(transaccion);
+            dataManager.guardarDatos();
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    /**
      * Realiza un depósito en la cuenta del usuario especificado
      * @param usuario Usuario que realiza el depósito
      * @param cuenta Cuenta donde se realiza el depósito (opcional)
@@ -794,7 +814,7 @@ public class BilleteraService {
 
             // Crear la transacción
             String idTransaccion = dataManager.generarId();
-            TransaccionFactory transaccion = new TransaccionDeposito();
+            TransaccionDeposito transaccion = new TransaccionDeposito();
             transaccion.setIdTransaccion(idTransaccion);
             transaccion.setFechaTransaccion(java.time.LocalDate.now());
             transaccion.setTipoTransaccion(TipoTransaccion.DEPOSITO);
@@ -843,7 +863,7 @@ public class BilleteraService {
 
             // Crear la transacción
             String idTransaccion = dataManager.generarId();
-            TransaccionFactory transaccion = new TransaccionRetiro();
+            TransaccionRetiro transaccion = new TransaccionRetiro();
             transaccion.setIdTransaccion(idTransaccion);
             transaccion.setFechaTransaccion(java.time.LocalDate.now());
             transaccion.setTipoTransaccion(TipoTransaccion.RETIRO);
@@ -1078,33 +1098,7 @@ public class BilleteraService {
         }
     }
 
-    /**
-     * Elimina una transacción
-     * @param transaccion Transacción a eliminar
-     * @return true si se eliminó correctamente, false en caso contrario
-     */
-    public boolean eliminarTransaccion(TransaccionFactory transaccion) {
-        if (transaccion == null) {
-            return false;
-        }
 
-        try {
-            // Buscar la transacción en el DataManager
-            TransaccionFactory transaccionEncontrada = dataManager.buscarTransaccion(transaccion.getIdTransaccion());
-            if (transaccionEncontrada == null) {
-                return false;
-            }
-
-            // Eliminar la transacción
-            dataManager.getTransacciones().remove(transaccionEncontrada);
-            dataManager.guardarDatos();
-
-            return true;
-        } catch (Exception e) {
-            e.printStackTrace();
-            return false;
-        }
-    }
 
     /**
      * Obtiene estadísticas generales del sistema
